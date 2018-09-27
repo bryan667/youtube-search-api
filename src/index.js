@@ -5,6 +5,8 @@ import YTSearch from 'youtube-api-search';
 import Searchbar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
+import TestInput from './components/test-input';
+import TestInput2 from './components/test-input2';
 
 const API_KEY = 'AIzaSyD6OR3hDFpkmdWUy32WD6M6GHfVb4SUDm4';
 
@@ -37,6 +39,8 @@ class Awyis extends Component {
     return (
       <div id="main-body">
         <div id="left">
+          <TestInput />
+          <TestInput2 />
           <Searchbar onSearchChange={videoSearch} />
           <VideoDetail videoDetail={this.state.selectedVideo} />
         </div>
